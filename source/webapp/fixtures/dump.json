@@ -1,0 +1,254 @@
+[
+{
+  "model": "webapp.status",
+  "pk": 1,
+  "fields": {
+    "name": "New"
+  }
+},
+{
+  "model": "webapp.status",
+  "pk": 2,
+  "fields": {
+    "name": "In progress"
+  }
+},
+{
+  "model": "webapp.status",
+  "pk": 3,
+  "fields": {
+    "name": "Done"
+  }
+},
+{
+  "model": "webapp.issue",
+  "pk": 1,
+  "fields": {
+    "summary": "Домашнее задание",
+    "description": "Пересмотреть урок номер 57 и выполнить домашнее задание до дедлайна",
+    "status": 1,
+    "created_at": "2023-03-03T04:58:22.895Z",
+    "updated_at": "2023-03-03T04:58:22.895Z",
+    "type": [
+      3
+    ]
+  }
+},
+{
+  "model": "webapp.issue",
+  "pk": 2,
+  "fields": {
+    "summary": "Всплывающее окно",
+    "description": "Всплывающее окно не пропадает, пока не измениться дата",
+    "status": 2,
+    "created_at": "2023-03-03T05:01:49.798Z",
+    "updated_at": "2023-03-03T05:01:49.798Z",
+    "type": [
+      1
+    ]
+  }
+},
+{
+  "model": "webapp.issue",
+  "pk": 3,
+  "fields": {
+    "summary": "Перевод текста и шрифты",
+    "description": "Не переведены на русский заголовки и описание. Не подобрены правильные шрифты и их размеры",
+    "status": 3,
+    "created_at": "2023-03-03T05:04:38.763Z",
+    "updated_at": "2023-03-03T05:04:38.763Z",
+    "type": [
+      2
+    ]
+  }
+},
+{
+  "model": "webapp.issue",
+  "pk": 4,
+  "fields": {
+    "summary": "Ошибка подключения",
+    "description": "Возникает ошибка подключения на игровой сервер",
+    "status": 1,
+    "created_at": "2023-03-03T05:06:47.154Z",
+    "updated_at": "2023-03-03T05:06:47.154Z",
+    "type": [
+      1
+    ]
+  }
+},
+{
+  "model": "webapp.issue",
+  "pk": 5,
+  "fields": {
+    "summary": "Оплата покупок",
+    "description": "Необновляется курс тенге к доллару во время оплаты покупок",
+    "status": 2,
+    "created_at": "2023-03-03T05:09:26.643Z",
+    "updated_at": "2023-03-03T05:09:26.643Z",
+    "type": [
+      1
+    ]
+  }
+},
+{
+  "model": "webapp.issue",
+  "pk": 8,
+  "fields": {
+    "summary": "Какой то bug",
+    "description": "Сделать что-то там",
+    "status": 2,
+    "created_at": "2023-02-02T23:29:55Z",
+    "updated_at": "2023-02-04T23:26:11Z",
+    "type": [
+      1
+    ]
+  }
+},
+{
+  "model": "webapp.issue",
+  "pk": 9,
+  "fields": {
+    "summary": "Какое то улучшение",
+    "description": "Какое то улучшение",
+    "status": 2,
+    "created_at": "2023-03-01T23:35:05Z",
+    "updated_at": "2023-03-06T23:35:08Z",
+    "type": [
+      2
+    ]
+  }
+},
+{
+  "model": "webapp.issue",
+  "pk": 10,
+  "fields": {
+    "summary": "Веб страница",
+    "description": "Что-то там с веб страницой",
+    "status": 1,
+    "created_at": "2023-03-06T23:37:30Z",
+    "updated_at": "2023-03-06T23:37:32Z",
+    "type": [
+      1
+    ]
+  }
+},
+{
+  "model": "webapp.issue",
+  "pk": 11,
+  "fields": {
+    "summary": "Стили",
+    "description": "Реализовать стили для проекта",
+    "status": 3,
+    "created_at": "2023-02-23T23:39:46Z",
+    "updated_at": "2023-03-01T23:39:53Z",
+    "type": [
+      3
+    ]
+  }
+},
+{
+  "model": "webapp.issue",
+  "pk": 12,
+  "fields": {
+    "summary": "Проект Джанго",
+    "description": "Реализовть проект джанго",
+    "status": 3,
+    "created_at": "2023-02-01T23:43:34Z",
+    "updated_at": "2023-02-04T23:43:49Z",
+    "type": [
+      3
+    ]
+  }
+},
+{
+  "model": "webapp.issue",
+  "pk": 13,
+  "fields": {
+    "summary": "Валидация",
+    "description": "Не работает валидация на проекте",
+    "status": 2,
+    "created_at": "2023-03-02T23:45:51Z",
+    "updated_at": "2023-03-06T23:46:02Z",
+    "type": [
+      1
+    ]
+  }
+},
+{
+  "model": "webapp.issue",
+  "pk": 14,
+  "fields": {
+    "summary": "Улучшить адаптивность",
+    "description": "Улучшить адаптивность",
+    "status": 1,
+    "created_at": "2023-03-05T23:46:38Z",
+    "updated_at": "2023-03-06T23:46:46Z",
+    "type": [
+      2
+    ]
+  }
+},
+{
+  "model": "webapp.issue",
+  "pk": 15,
+  "fields": {
+    "summary": "Читаемость",
+    "description": "Добавить читаемость на всех консолях",
+    "status": 3,
+    "created_at": "2023-02-01T23:47:58Z",
+    "updated_at": "2023-02-02T23:47:50Z",
+    "type": [
+      3
+    ]
+  }
+},
+{
+  "model": "webapp.issue",
+  "pk": 16,
+  "fields": {
+    "summary": "Зависает игра",
+    "description": "При подключении больше 5 игроков, играет начинает зависать",
+    "status": 1,
+    "created_at": "2023-03-06T23:51:57Z",
+    "updated_at": "2023-03-06T23:51:57Z",
+    "type": [
+      1
+    ]
+  }
+},
+{
+  "model": "webapp.issue",
+  "pk": 17,
+  "fields": {
+    "summary": "Улучшить игрока",
+    "description": "Улучшить плавность движения игрока",
+    "status": 1,
+    "created_at": "2023-02-17T23:55:43Z",
+    "updated_at": "2023-03-01T23:55:51Z",
+    "type": [
+      2
+    ]
+  }
+},
+{
+  "model": "webapp.type",
+  "pk": 1,
+  "fields": {
+    "name": "Bug"
+  }
+},
+{
+  "model": "webapp.type",
+  "pk": 2,
+  "fields": {
+    "name": "Enhancement"
+  }
+},
+{
+  "model": "webapp.type",
+  "pk": 3,
+  "fields": {
+    "name": "Task"
+  }
+}
+]
