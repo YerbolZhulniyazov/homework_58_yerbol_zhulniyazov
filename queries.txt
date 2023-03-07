@@ -1,0 +1,21 @@
+from datetime import datetime, timedelta
+from django.db.models import Q, F, Count
+
+
+#1)Закрытые задачи за последний месяц от текущей даты
+Issue.objects.filter(updated_at__gt=datetime.now() - timedelta(days=31))
+
+#2)Задачи, имеющие один из указанных статусов И один из указанных типов (в запросе укажите 2 любых названия типа и 2 названия статуса, которые есть в вашей базе).
+Issue.objects.filter(type__name='Bug') | Issue.objects.filter(type__name='Task') & Issue.objects.filter(status__name='Done') | Issue.objects.filter(status__name='In progress')
+
+#3)Задачи, в названии которых содержится слово "bug" в любом регистре или относящиеся к типу "Баг", имеющие НЕ закрытый статус.
+Issue.objects.filter(summary__icontains='bug') | Issue.objects.filter(type__name='Bug').filter(~Q(status__name='Done'))
+
+#4)Для всех задач только следующие поля: id, название задачи, название типа и название статуса.
+Issue.objects.all().values('id', 'summary', 'type__name', 'status__name')
+
+#5)Задачи, где краткое описание совпадает с полным.
+Issue.objects.filter(summary__exact=F('description'))
+
+#6)Количество задач по каждому типу.
+Issue.objects.values("type").annotate(Count("id"))
